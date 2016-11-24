@@ -12,6 +12,8 @@ import java.util.Map;
 
 public class RNShareActionsModule extends ReactContextBaseJavaModule {
 
+    private final ReactApplicationContext reactContext;
+
     public RNShareActionsModule(ReactApplicationContext reactContext) {
         super(reactContext);
         this.reactContext = reactContext;
@@ -29,7 +31,7 @@ public class RNShareActionsModule extends ReactContextBaseJavaModule {
         intent.setType("text/plain");
         intent.putExtra(Intent.EXTRA_TEXT, url);
 
-        Intent chooser = Intent.createChooser(this.getIntent(), "Share URL");
+        Intent chooser = Intent.createChooser(intent, "Share URL");
         chooser.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 
         this.reactContext.startActivity(chooser);
