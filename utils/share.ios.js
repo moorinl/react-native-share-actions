@@ -10,9 +10,10 @@ var ShareUtils = {
    * @param {String} options.url
    * @param {String} options.message
    * @param {String} options.subject
+   * @param {String} title
    * @return {Promise}
    */
-  share: function(options) {
+  share: function(options, title) {
     return new Promise(function(resolve, reject) {
       ActionSheetIOS.showShareActionSheetWithOptions({
           url: options.url,

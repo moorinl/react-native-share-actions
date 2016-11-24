@@ -12,12 +12,13 @@ var ShareUtils = {
    * @param {String} options.url
    * @param {String} options.message
    * @param {String} options.subject
+   * @param {String} title
    * @return {Promise}
    */
-  share: function(options) {
+  share: function(options, title) {
     return new Promise(function(resolve, reject) {
       try {
-        RNShareActions.share(options.url);
+        RNShareActions.share(options, title);
 
         resolve({
           success: true,
