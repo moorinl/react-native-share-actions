@@ -6,7 +6,7 @@ import com.facebook.react.bridge.NativeModule;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.uimanager.ViewManager;
 
-import io.moori.rnshareactions.RNShareActionsPackage;
+import io.moori.rnshareactions.RNShareActionsModule;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -29,7 +29,7 @@ class RNShareActionsPackage implements ReactPackage {
         ReactApplicationContext reactContext) {
         List<NativeModule> modules = new ArrayList<>();
 
-        modules.add(new RNShareActionsPackage(reactContext));
+        modules.add(new RNShareActionsModule(reactContext));
 
         return modules;
     }

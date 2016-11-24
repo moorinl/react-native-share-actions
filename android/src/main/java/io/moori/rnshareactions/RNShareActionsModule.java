@@ -10,7 +10,7 @@ import com.facebook.react.bridge.ReactMethod;
 
 import java.util.Map;
 
-public class ShareActionsModule extends ReactContextBaseJavaModule {
+public class RNShareActionsModule extends ReactContextBaseJavaModule {
 
     public ShareActionsModule(ReactApplicationContext reactContext) {
         super(reactContext);
