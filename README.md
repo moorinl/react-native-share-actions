@@ -2,6 +2,9 @@
 
 React Native show share actions for Android and iOS.
 
+[![npm version](https://badge.fury.io/js/react-native-share-actions.svg)](https://badge.fury.io/js/react-native-share-actions)
+
+
 * Issues: [https://github.com/moorinteractive/react-native-share-actions/issues](https://github.com/moorinteractive/react-native-share-actions/issues)
 
 This module uses [ActionSheetIOS](https://facebook.github.io/react-native/docs/actionsheetios.html) for iOS and a native bridge for Android.
