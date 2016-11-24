@@ -39,7 +39,7 @@ import io.moori.rnshareactions.RNShareActionsPackage;
 protected List<ReactPackage> getPackages() {
   return Arrays.<ReactPackage>asList(
     new MainReactPackage(),
-    new RNShareActionsPackage()
+    new RNShareActionsPackage() // Add the package here
   );
 }
 ```
