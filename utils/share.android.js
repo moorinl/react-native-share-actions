@@ -4,6 +4,8 @@ var {
   NativeModules
 } = require('react-native');
 
+var RNShareActions = NativeModules.RNShareActions;
+
 var ShareUtils = {
   /**
    * @param {Object} options
@@ -14,7 +16,17 @@ var ShareUtils = {
    */
   share: function(options) {
     return new Promise(function(resolve, reject) {
-      reject(new Error("Not implemented"));
+      try {
+        RNShareActions.share(options.url, options.message, options.subject);
+
+        resolve({
+          success: true,
+          method: 'unknown'
+        });
+      }
+      catch(error) {
+        reject(error);
+      }
     });
   }
 };

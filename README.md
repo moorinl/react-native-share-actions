@@ -13,6 +13,36 @@ npm install react-native-share-actions
 react-native link
 ```
 
+### Android manual Installation
+
+In your `android/app/build.gradle` add:
+
+```
+dependencies {
+    compile project(':react-native-share-actions')
+}
+```
+
+In your `android/settings.gradle` add:
+
+```
+include ':react-native-share-actions'
+project(':react-native-share-actions').projectDir = file('../node_modules/react-native-share-actions/android')
+```
+
+In your `MainApplication.java` add:
+
+```java
+import io.moori.rnshareactions.RNShareActionsPackage;
+
+@Override
+protected List<ReactPackage> getPackages() {
+  return Arrays.<ReactPackage>asList(
+    new MainReactPackage(),
+    new RNShareActionsPackage()
+  );
+}
+```
 ## Usage
 
 ```javascript
