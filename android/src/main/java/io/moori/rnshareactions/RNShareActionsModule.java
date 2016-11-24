@@ -12,7 +12,7 @@ import java.util.Map;
 
 public class RNShareActionsModule extends ReactContextBaseJavaModule {
 
-    public ShareActionsModule(ReactApplicationContext reactContext) {
+    public RNShareActionsModule(ReactApplicationContext reactContext) {
         super(reactContext);
         this.reactContext = reactContext;
     }
