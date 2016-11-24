@@ -54,7 +54,7 @@ async function handlePressShare() {
       url: 'http://www.example.com',
       message: 'This is a message',
       subject: 'Example'
-    }, 'Share URL);
+    }, 'Share URL');
 
     if (result.success) {
       console.log(`Shared via ${method}`);
