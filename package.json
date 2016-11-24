@@ -1,0 +1,28 @@
+{
+  "name": "react-native-share-actions",
+  "version": "0.1.0",
+  "description": "React Native show share actions for Android and iOS",
+  "main": "index.js",
+  "bugs": {
+    "url": "https://github.com/moorinteractive/react-native-share-actions/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/moorinteractive/react-native-share-actions.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rob Moorman <rob@moori.nl>",
+  "license": "MIT",
+  "peerDependencies": {
+    "react-native": ">=0.18"
+  },
+  "keywords": [
+    "react-native",
+    "ios",
+    "android",
+    "share",
+    "social"
+  ]
+}
