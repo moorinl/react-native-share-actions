@@ -17,7 +17,7 @@ var ShareUtils = {
   share: function(options) {
     return new Promise(function(resolve, reject) {
       try {
-        RNShareActions.share(options.url, options.message, options.subject);
+        RNShareActions.share(options.url);
 
         resolve({
           success: true,
