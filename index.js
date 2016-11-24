@@ -14,11 +14,11 @@ var ShareActions = {
     // Wrap result in a Promise, for consistent Android and iOS Promise usage
     return new Promise(function(resolve, reject) {
       ShareUtil.share(options)
-        .then(function() {
-          resolve(null);
+        .then(function(result) {
+          resolve(result);
         })
         .catch(function(error) {
-          reject(null);
+          reject(error);
         });
     });
   }
