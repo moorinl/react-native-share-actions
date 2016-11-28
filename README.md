@@ -60,7 +60,7 @@ async function handlePressShare() {
     }, 'Share URL');
 
     if (result.success) {
-      console.log(`Shared via ${method}`);
+      console.log(`Shared via ${result.method}`);
     }
   } catch (error) {
     console.error(error);
