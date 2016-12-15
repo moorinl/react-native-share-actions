@@ -67,3 +67,23 @@ async function handlePressShare() {
   }
 }
 ```
+
+```javascript
+var ShareActions = require('react-native-share-actions');
+
+function handlePressShare() {
+  ShareActions.share({
+    url: 'http://www.example.com',
+    message: 'This is a message',
+    subject: 'Example'
+  }, 'Share URL')
+    .then(function(result) {
+      if (result.success) {
+        console.log(`Shared via ${result.method}`);
+      }
+    })
+    .catch(function(error) {
+      console.error(error);
+    });
+}
+```
