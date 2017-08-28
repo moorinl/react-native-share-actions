@@ -14,7 +14,6 @@ import java.util.List;
 
 public class RNShareActionsPackage implements ReactPackage {
 
-    @Override
     public List<Class<? extends JavaScriptModule>> createJSModules() {
         return Collections.emptyList();
     }
